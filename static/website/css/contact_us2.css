@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background-image: linear-gradient(to left bottom, #321fff, #0050ff, #006dff, #0085fd, #3a99f0);
+}
+
+header {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+.top-container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 90px;
+    padding: 0 40px;
+}
+
+.top-container .logo {
+    margin-top: 0.4em;
+    width: 50%;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+header .menu ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 4rem;
+}
+
+header .menu li a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.ccontainer {
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ccontainer .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rem;
+}
+
+.ccontainer .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.ccontainer .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.ccontainer .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+} 
+
+.ccontainer .contactinfo .box .text .h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactform {
+    width: 40%;
+    padding: 40px;
+    background: yellow;
+    margin-right: 30rem;
+    
+}
+
+.contactform h2 {
+   font-size: 30px;
+   color: #333;
+   font-weight: 500;
+
+}
+.contactform .inputBox {
+   position: relative;
+   width: 100%;
+   margin-top: 10px;
+   background: yellow;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0; 
+    font-size: 16px;
+    margin: 10px 0; 
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    background: yellow;
+}
+
+.contactform .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputBox input:focus ~ span, 
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span, 
+.contactform .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .ccontainer {
+        flex-direction: column;
+    }
+    .ccontainer .contactinfo {
+        margin-bottom: 40px;
+
+    }
+    .ccontainer .contactinfo,
+    .contactform {
+        width: 100%;
+
+    }
+
+}

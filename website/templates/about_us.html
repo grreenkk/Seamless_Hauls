@@ -1,0 +1,106 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - Seamless Hauls</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700">
+
+    <link rel="stylesheet" href="{% static 'website/css/about_us.css' %}">
+</head>
+    
+<body>
+    <header>
+        <div class="top-container">
+            <div class= "logo">
+                <a href="{% url 'home' %}"><img src="{% static 'website/images/main_logo.svg' %}" alt="logo" class="logo"></a>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact_us2.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="super_container">
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>About us</h1>
+                <p class="text">
+                    Seamless Hauls is an National land-based logistics provider established in 2015. We are a leading provider of continental transportation, fulfillment, logistics, and supply chain services. We pride ourselves on our ability to design and execute innovative, cost-effective solutions to even the most complex global logistics challenges.
+                </p>
+                <p class="text">
+                    Since our inception, Seamless Hauls has grown into a dependable and unblemished provider of third-party logistics (3PL) and supply chain solutions to enterprises across Nigeria. Across the many industries we serve, including retail, consumer packaged goods, automotive, and countless others, our customers have come to depend on us to help them drive their businesses forward through the highest standard of integrity, ingenuity, and reliable service.
+                </p>
+                <div class="skills">
+                    <span>Trucking</span>
+                    <span>Haulage</span>
+                    <span>Logistics</span>
+                </div>
+            </div>
+        </div>   
+    </div>
+     <f-body>
+        <footer class="footer">
+                <div class="footer-left">
+                    <img src="{% static 'website/images/main_logo.svg' %}" alt="logo" class="logo">
+
+
+                </div>
+                <ul class="footer-right">
+                    <li>
+                        <h2>Product</h2>
+
+                        <ul class="box">
+                            <li><a href="#">Terms &Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+
+                        </ul>
+                    </li>
+                    <li class= "features">
+                        <h2>Useful links</h2>
+
+                        <ul class="box">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="contact_us2.html">Contact</a></li>
+
+                        </ul>
+                    </li>
+                    <li class= "features">
+                        <h2>Address</h2>
+
+                        <ul class="box">
+                            <li><a href="#">1-3, Creek Road</a></li>
+                            <li><a href="#">Apapa Road,</a></li>
+                            <li><a href="#">Apapa</a></li>
+                            <li><a href="#">08090150406</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer-bottom">
+                    All rights reserved by &copy;Seamless Hauls
+                </div>
+        </footer>
+    </f-body>
+</body>
+</html>

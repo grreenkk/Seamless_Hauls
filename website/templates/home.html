@@ -1,0 +1,284 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Seamless Hauls</title>
+    
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="top-container">
+            <div class= "logo">
+                <a href="#"><img src="{% static 'website/images/main_logo.svg' %}" alt="logo" class="logo"></a>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">Home</ahref>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact_us2.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <section id="home">
+                <div class="info-section">
+                    <h1>
+                        Hauling in Style. <br>
+                        fast and efficient delivery of goods to desired locations
+    
+                    </h1>
+                    <p>Your goods are Safe with us</p>
+                    <div class="call-action">
+                        <a href="about_us.html" class="action-btn">About Us</a>
+                        <a href="contact_us2.html" class="action-ghost-btn">More info</a>
+                    </div>
+                </div>
+                <div class="photos">
+                    <img class="wood" src="https://images.unsplash.com/photo-1506306460327-3164753b74c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+                    <img class="road" src="https://images.unsplash.com/photo-1504846257989-a76209d9d2ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" src="" alt="">
+                    <div class="shape1"></div>  
+                </div>      
+                <div class="shape2"></div>
+                <div class="shape3"></div>
+                        
+            </section>
+        </div>
+    </header>
+    
+
+
+
+
+
+
+    <section class="experience-outdoors">
+        <div class="container">
+            <div class="title-heading">
+                <h1>Trucking, Haulage and Logistics</h1>
+                <p>Economy, Efficiency and Effectiveness</p>
+
+            </div>
+
+            <div class="activities-grid">
+                <!-- grid item 1 -->
+                <div class="activities-grid-item star-gazing">
+                    <i class="icon ion-md-star"></i>
+                    <h1>Trucking</h1>
+                    <p>Our aim is to act as an indispensable partner to our clients by helping them build and maximize sustainable competitive advantages. We do this by helping them get their products to market quickly, efficiently, and safely. In addition to our expertly crafted and reliably delivered logistics solutions, our clients can rest assured that every interaction will be driven by integrity and respect, the fundamental principles of our business.</p>
+
+                </div>
+                <!-- grid item 2 -->
+                <div class="activities-grid-item hiking">
+                    <i class="icon ion-md-compass"></i>
+                    <h1>Haulage & Logistics</h1>
+                    <p>Our mission is to deliver a positive, reliable experience to each and every one of our clients while offering exceptional value in the marketplace and setting the standard for professionalism in the logistic solutions we provide. In addition to operating our business profitably, we strive to operate it responsibly both for our clients and our employees, for whom our goal is to provide a safe and secure work environment.</p>
+
+                </div>
+                <!-- grid item 3 -->
+                <div class="activities-grid-item camping">
+                    <i class="icon ion-md-bonfire"></i>
+                    <h1>Warehousing</h1>
+                    <p>Warehouses are needed by Importers/Manufacturers as a point of developing retail outlets thereby reducing the end cost of the product to the final consumer and thus enhance production sales ratios. Seamless Hauls provides warehouses for customers from various sectors of the economy, having large or complex supply chain.
+
+Our warehouses have modern facilities and can be used for short term, medium term or on long term basis. Seamless Hauls Limited could also partner with her clients to evaluate their warehousing needs, proffer solutions/run or manage same for optimal performance.
+
+ </p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+   
+    
+    <div class="content-rapper">
+        <div class="portfolio-items-wrapper">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(https://nosakgroup.com/wp-content/uploads/2017/03/NHL_2.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <h3>TRUCKING </h3>          
+                    </div>
+
+                    <div class="subtitle">
+                        Fully equipped functionality
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url({% static 'website/images/portfolio2.jpg' %})"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper2">
+                        <h3>SECURE </h3>          
+                    </div>
+
+                    <div class="subtitle">
+                        All goods are compactly stored
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url({% static 'website/images/portfolio3.jpg' %})"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper3">
+                        <h3>DISTRIBUTION </h3>          
+                    </div>
+
+                    <div class="subtitle">
+                        Efficient Transport & Delivery
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url({% static 'website/images/portfolio41.jpg' %})"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper4">
+                        <h3>REAL-TIME</h3>          
+                    </div>
+
+                    <div class="subtitle4">
+                        Load Matching & Dead mileage optimization
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url({% static 'website/images/portfolio51.jpg' %})"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper5">
+                        <h3>NATIONWIDE </h3>          
+                    </div>
+
+                    <div class="subtitle5">
+                        Swift Load Pickup & Delivery
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url({% static 'website/images/portfolio6.jpg' %})"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper6">
+                        <h3>ORGANISATION </h3>          
+                    </div>
+
+                    <div class="subtitle">
+                        Timeliness & Completeness
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <section class="testimonials ">
+        <div class="color-overlay"></div>
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-text-box">
+                    <p>My goods arrived on time, with no issues. I am delighted<p>
+                     <i class="icon ion-md-quote"></i>
+                </div>
+                <div class="testimonial-customer">
+                    <img src="{% static 'website/images/user1.svg' %}" alt="">
+                    <h1>Danladi Sakira</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="begin-adventure">
+        <div class="new-container">
+            <div class="title-heading">
+                <h3>Vision & Mission</h3>
+                <h1>Compact and Efficient Solutions</h1>
+                <p>Our Main goal is to ease your burden</p>
+            </div>
+            <div class="adventure-grid">
+                <div class="adventure-grid-item">
+                    <p>Our success is measured by maintaining the highest level of service, constantly testing the market to ensure price competitiveness and fostering our long-term relationships with not only our clients but our carrier partners as well.
+                        As a non-asset based organization with access to a significant pool of carrier partners, we can focus on our customers instead of worrying about maintaining our own infrastructure. We specialize in point-to-point transportation and warehousing throughout Nigeria. Whether it is LTL, TL or intermodal and recently expanded into air and ocean shipments to meet our client’s changing demands.</p>
+                </div>
+                    <p>Our goal is to provide our clients with the most reliable, cost efficient and professional supply chain management solutions in the industry. Our experienced and knowledgeable team strives to consistently improve your organizations service levels by building efficiencies, identifying gaps and decreasing your bottom line. With our robust experience in the industry, we understand the key in today’s competitive market is developing and implementing custom tailored solutions that are unique to our clients’ strategic goals.</p>
+                </div>
+            </div>
+            <a class="btn" href="contact_us2.html">Contact us</a>
+        </div>
+    </section> 
+    <f-body>
+        <footer class="footer">
+                <div class="footer-left">
+                    <img src="{% static 'website/images/main_logo.svg' %}" alt="logo" class="logo">
+
+
+                </div>
+                <ul class="footer-right">
+                    <li>
+                        <h2>Product</h2>
+
+                        <ul class="box">
+                            <li><a href="#">Terms &Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+
+                        </ul>
+                    </li>
+                    <li class= "features">
+                        <h2>Useful links</h2>
+
+                        <ul class="box">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="contact_us2.html">Contact</a></li>
+
+                        </ul>
+                    </li>
+                    <li class= "features">
+                        <h2>Address</h2>
+
+                        <ul class="box">
+                            <li><a href="#">1-3, Creek Road</a></li>
+                            <li><a href="#">Apapa Road,</a></li>
+                            <li><a href="#">Apapa</a></li>
+                            <li><a href="#">08090150406</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer-bottom">
+                    All rights reserved by &copy;Seamless Hauls
+                </div>
+        </footer>
+    </f-body>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        
+        
+        portfolioItem.addEventListener('mouseout', () => {
+            
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
