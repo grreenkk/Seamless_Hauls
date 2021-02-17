@@ -138,7 +138,7 @@ STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'seamlesshauls@gmail.com'
-EMAIL_HOST_PASSWORD = 'Bracelet12345'
+EMAIL_HOST_PASSWORD = 'Bracelet1'
 
 EMAIL_USE_TLS = True
 
